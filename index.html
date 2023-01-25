@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉬운 그림 - easy picture</title>
+    <link rel="icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas></canvas>
+    <div class="color-options">
+        <input type="color" id="color">
+        <div class="color-option" style="background-color: #1abc9c;" data-color="#1abc9c"></div>
+        <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
+        <div class="color-option" style="background-color: #34495e;" data-color="#34495e"></div>
+        <div class="color-option" style="background-color: #27ae60;" data-color="#27ae60"></div>
+        <div class="color-option" style="background-color: #8e44ad;" data-color="#8e44ad"></div>
+        <div class="color-option" style="background-color: #f1c40f;" data-color="#f1c40f"></div>
+        <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+        <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+        <div class="color-option" style="background-color: #e67e22;" data-color="#e67e22"></div>
+        <div class="color-option" style="background-color: rgb(255, 143, 162);" data-color="rgb(255, 143, 162)"></div>
+    </div>
+    <div class="btns">
+        <input id="line-width" type="range" min="1" max="10" value="5" step="0.2">
+        <button id="mode-btn">🩸 Fill</button>
+        <button id="destroy-btn">💣 Destroy</button>
+        <button id="eraser-btn">❌ Erase</button>
+        <label for="file">
+            💅🏻 Add Photo
+            <input type="file" accept="image/*" id="file"
+        /></label>
+        <input type="text" id="text" placeholder="Add text here... :)" />
+        <input type="number" id="number" value="1" min="1" max="500">
+        <select id="sizeSelect">
+            <option selected>px</option>
+            <option>em</option>
+            <option>rem</option>
+            <option>%</option>
+        </select>
+        <button id="save">🖼 Save image</button>
+        <button id="Appdownload">Download App</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
